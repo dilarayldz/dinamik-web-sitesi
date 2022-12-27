@@ -178,6 +178,7 @@ img{
     top: 13%;
     left: 56%;
     width: 500px;
+    height: 500px;
     background: transparent;
     border: 3px solid #3c3c3c;
     border-radius: 50%;
@@ -187,13 +188,14 @@ img{
     content: '';
     position: absolute;
     top: -3px;
-    right: -3px;
+    left: -3px;
     width: 100%;
     height: 100%;
     border: 3px solid transparent;
     border-bottom: 3px solid #fff12e;
     border-left: 3px solid #fff12e;
-    animation: returnCircle2 10s linear infinite;
+    border-radius: 50%;
+    animation: returnCircle2 10sn linear infinite;
 }
 
 .circle-two{
@@ -203,13 +205,13 @@ img{
     left: 50%;
     width: 50%;
     height: 4px;
-    background: #fff12e;
+    background: transparent;
     transform-origin: left;
     animation: return2 10s linear infinite;
 }
 
 .circle-two:before{
-    content: '';
+    content: "";
     position: absolute;
     top: -6px;
     right: -8px;
@@ -219,7 +221,6 @@ img{
     box-shadow: 0 0 20px #fff12e;
     border-radius: 50%;
 }
-
 
 @keyframes returnCircle {
     0%{
@@ -245,7 +246,6 @@ img{
     0%{
         transform: rotate(-45deg);
     }
-    
     100%{
         transform: rotate(-405deg);
     }
@@ -256,8 +256,8 @@ img{
     0%{
         transform: rotate(0deg);
     }
-
     100%{
         transform: rotate(-360deg);
     }
+    
 }
